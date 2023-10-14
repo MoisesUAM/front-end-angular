@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+<div class="container d-flex align-items-center justify-items-center">
+  <div class="container">
+    <div class="card">
+
+      <div class="card-body">
+        <h4 class="card-title text-center">Proyecto simple de contador</h4>
+        <br>
+        <hr>
+        <div class="container d-flex align-content-center justify-content-center flex-column gap-5">
+          <ng-container *ngIf="hasCounter">
+            <div class="card text-white bg-success mb-3 align-self-center" style="width: 18rem;">
+              <div class="card-body">
+                <div class="text-center" style="font-size: 80px; font-weight: bolder">{{counter}}</div>
+              </div>
+            </div>
+          </ng-container>
+          <button (click)="onClickCounter()" type="button" name="" id="" class="btn btn-primary btn-lg btn-block">Contar
+            clicks
+          </button>
+          <button (click)="onResetCounter()" type="button" class="btn btn-dark btn-lg btn-block">Reiniciar
+          </button>
+          <button (click)="onRestClickCounter()" type="button" class="btn btn-danger   btn-lg btn-block">Disminuir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
